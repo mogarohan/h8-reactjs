@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import clsx from "clsx";
