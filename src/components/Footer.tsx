@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Facebook, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { FiInstagram, FiTwitter, FiFacebook } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -25,14 +26,14 @@ export default function Footer() {
               We define the pinnacle of automotive protection. H.Eight provides meticulously engineered formulas for those who demand absolute perfection.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
-                <Instagram size={18} strokeWidth={1.5} />
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
+                <FiInstagram size={18} strokeWidth={1.5} />
               </a>
-              <a href="#" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
-                <Twitter size={18} strokeWidth={1.5} />
+              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
+                <FiTwitter size={18} strokeWidth={1.5} />
               </a>
-              <a href="#" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
-                <Facebook size={18} strokeWidth={1.5} />
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#0057FF] hover:bg-[#0057FF]/10 transition-all bg-[#111318]">
+                <FiFacebook size={18} strokeWidth={1.5} />
               </a>
             </div>
           </div>
@@ -43,8 +44,8 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-zinc-500 font-medium">
               <li><Link to="/products" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Our Collection</Link></li>
               <li><Link to="/vision" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">The Vision</Link></li>
-              <li><Link to="#" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Technology</Link></li>
-              <li><Link to="#" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Professionals</Link></li>
+              <li><Link to="/vision" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Technology</Link></li>
+              <li><Link to="/contact" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Professionals</Link></li>
             </ul>
           </div>
 
@@ -53,9 +54,9 @@ export default function Footer() {
             <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-6">Support</h4>
             <ul className="flex flex-col gap-4 text-sm text-zinc-500 font-medium">
               <li><Link to="/contact" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Contact Us</Link></li>
-              <li><Link to="#" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">FAQ</Link></li>
-              <li><Link to="#" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Shipping & Returns</Link></li>
-              <li><Link to="#" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Safety Data</Link></li>
+              <li><Link to="/contact" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Shipping & Returns</Link></li>
+              <li><Link to="/contact" className="hover:text-[#0057FF] hover:translate-x-1 transition-all inline-block">Safety Data</Link></li>
             </ul>
           </div>
 
@@ -82,9 +83,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-white/5">
           <div className="flex flex-wrap justify-center gap-6 text-[10px] font-bold text-zinc-600 uppercase tracking-widest">
-            <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="#" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link to="#" className="hover:text-white transition-colors">Locations</Link>
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Locations</Link>
           </div>
           <div className="text-[10px] font-bold text-zinc-600 uppercase tracking-widest text-center md:text-right">
             &copy; {new Date().getFullYear()} <span className="text-[#0057FF]">H.EIGHT CARBON ELITE.</span> ALL RIGHTS RESERVED.
